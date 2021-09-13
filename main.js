@@ -22,24 +22,41 @@
 
 
 // Desafio 2
+
 // |-- 1 --|
 
-let edad = parseInt(prompt("Ingrese su edad."))
-
-if (edad >= 18){
-	alert ("Es mayor de edad.")
-} else {
-	alert("Es menor de edad.")
-}
+//	let edad = parseInt(prompt("Ingrese su edad."))
+//
+//	if (edad >= 18){
+//		alert ("Es mayor de edad.")
+//	} else {
+//		alert("Es menor de edad.")
+//	}
 
 // |-- 2 --|
 
-let passwordIngresada = prompt("Ingrese su contraseña.")
-const passwordRegistrada = "coder";
+//	let passwordIngresada = prompt("Ingrese su contraseña.")
+//	const passwordRegistrada = "coder";
+//
+//	if (passwordIngresada == passwordRegistrada){
+//		alert("Ingreso exitoso !!")
+//	} else {
+//		alert ("Contraseña incorrecta. Vuelve a intentarlo.")
+//	}
 
-if (passwordIngresada == passwordRegistrada){
-	alert("Ingreso exitoso !!")
-} else{
-	alert ("Contraseña incorrecta. Vuelve a intentarlo.")
+//CLASE
+
+//			let inicio = parseInt(prompt ("Ingrese el día actual"))
+//			let finDeMes = 30;
+
+//			for (inicio; inicio <= finDeMes ; inicio++) {
+//				console.log ("Inicio vale: ", inicio);
+//			}
+
+// DESAFIO 3
+let numero = parseInt(prompt("Ingresa tu nota."));
+
+while (numero >= 6) {
+	console.log("Felicidades, aprobaste.");
+	numero = parseInt(prompt("Ingresa otra nota."));
 }
-
