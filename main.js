@@ -44,19 +44,26 @@
 //		alert ("Contraseña incorrecta. Vuelve a intentarlo.")
 //	}
 
-//CLASE
+//For
+let inicio = parseInt(prompt ("Ingrese el día actual"))
+let finDeMes = 30;
 
-//			let inicio = parseInt(prompt ("Ingrese el día actual"))
-//			let finDeMes = 30;
-
-//			for (inicio; inicio <= finDeMes ; inicio++) {
-//				console.log ("Inicio vale: ", inicio);
-//			}
-
-// DESAFIO 3
-let numero = parseInt(prompt("Ingresa tu nota."));
-
-while (numero >= 6) {
-	console.log("Felicidades, aprobaste.");
-	numero = parseInt(prompt("Ingresa otra nota."));
+for (inicio; inicio <= finDeMes ; inicio++) {
+	console.log ("Inicio vale: ", inicio);
 }
+
+// While
+let numero = prompt("Ingresa tu nota.");
+
+while (numero != "OK") {
+	console.log(numero);
+	numero = parseFloat(prompt("Ingresar otra nota."));
+}
+
+// Do while
+let nota = 0;
+
+do{
+	nota = parseFloat(prompt("Ingrese las notas del semestre."));
+	console.log(nota);
+}while (parseFloat(nota));
