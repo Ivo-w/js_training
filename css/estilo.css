@@ -1,0 +1,19 @@
+/*CSS GENERAL*/
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	background-color: grey;
+}
+/* - FONTS - */
+
+/**/
+.logo_tamanio{
+	width: 150px;
+	height: 65px;
+}
+
