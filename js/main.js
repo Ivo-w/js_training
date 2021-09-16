@@ -1,39 +1,20 @@
-// JS
-let edadUsuario = 0;
-function solicitarEdad(){
-	let edadUsuario = parseInt(prompt("Ingresar su edad"));
-	console.log("Su edad es: " + edadUsuario);
+// Promedio de notas
+let contadorNotas = 0;
+let notasUsuario = 0;
+let promedioUsuario = 0;
+
+function promedioAlumno(){
+for (let i = 0; i < 4; i++) {
+	notasUsuario = parseInt(prompt("Ingrese las 4 notas del cuatrimestre"));
+ 	contadorNotas = contadorNotas + notasUsuario;	
+ 	promedioUsuario = contadorNotas / 4;
 }
- let promedio = edadUsuario
-
-
-// For
-let inicio = parseInt(prompt ("Ingrese el día actual"))
-let finDeMes = 30;
-
-for (let edadUsuario; edadUsuario != "ESC" ; inicio++) {
-	console.log ("Inicio vale: ", inicio);
+console.log("El promedio de la materia es: " + promedioUsuario)
 }
 
+promedioAlumno();
 
 
 
 
 
-
-
-
-
-
-
-function PromedioEdad{
-	let promedioEdadUsuario = edadUsuario
-}
-
-
-while (solicitarEdad !== "ESC") {
-		console.log("Su edad es: " + edadUsuario);
-		edadUsuario = parseInt(prompt("Ingresar su edad"));
-}
-
-let edad

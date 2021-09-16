@@ -9,6 +9,9 @@ html{
 body{
 	background-color: grey;
 }
+a{
+	text-decoration: none;
+}
 /* - FONTS - */
 
 /**/
@@ -16,4 +19,39 @@ body{
 	width: 150px;
 	height: 65px;
 }
+.navFlex{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.listNavFlex{
+	padding: 20px;
+	list-style: none;
+	text-decoration: none;
 
+}
+.fontNav{
+	font-family: monospace;
+	font-size: 20px;
+}
+.txtInicio{
+	font-size: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 30px;
+	font-size: 40px;
+	font-family: serif;
+}
+
+.parrafoInicio {
+	font-size: 25px;
+	font-family: serif;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding-left:500px;
+	padding-right: 500px;
+	text-align: left;
+	padding-top: 10px;
+}
