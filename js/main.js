@@ -1,26 +1,4 @@
-//Objeto creado.
 
-let contadorNotas = 0;
-let notasUsuario = 0;
-let promedioUsuario = 0;
-
-function promedioAlumno(){
-	for (let i = 0; i < 4; i++) {
-		notasUsuario = parseInt(prompt("Ingrese las 4 notas del cuatrimestre"));
-		 contadorNotas = contadorNotas + notasUsuario;	
-		 promedioUsuario = contadorNotas / 4;
-}
-console.log("El promedio de la materia es: " + promedioUsuario)
-}
-
-promedioAlumno();
-const coders = {
-	usuarioUno: "Juan",
-	usuarioDos : "Nicolas",
-	usuarioTres : "Matías",
-};
-
-console.log(coders) //coders.usuarioTres
 class CrearUsuarios {
 	constructor (nombre, edad, dni) {
 		this.nombre = nombre;
@@ -35,24 +13,24 @@ const usuario1 = new CrearUsuarios (
 );
 
 console.log (usuario1);
-console.log (persona1.nombre);
-console.log (persona1.edad);
-console.log (persona1.dni);
+console.log (usuario1.nombre);
+console.log (usuario1.edad );
+console.log (usuario1.dni);
 
 
 // Desafio ARRAYS
 	const NUMEROS = [1, 2, 3, 4, 5, 6, 7];
 
-	let alumnosAprobados = ["Matías", "Marcelo", "Camila", "Leonel"];
+	let usuariosAprobados = ["Matías", "Marcelo", "Camila", "Leonel"];
 
-	let alumnosRegulares = ["Hernan", "Santiago", "Lucas", "Sofía"];
+	let usuariosRegulares = ["Hernan", "Santiago", "Lucas", "Sofía"];
 
-	let alumnosFinales = alumnosAprobados.concat(alumnosRegulares);
+	let usuariosFinales = usuariosAprobados.concat(usuariosRegulares);
 
-	alumnosFinales.push("Martín");
+	usuariosFinales.push("Martín");
 
-	const encontrar = alumnosFinales.find (elemento => elemento = "Leonel");
+	const encontrar = usuariosFinales.find (elemento => elemento = "Leonel");
 
-	console.log (alumnosFinales);
-	console.log ("El alumno:", encontrar + " está promocionado.");
+	console.log (usuariosFinales);
+	console.log (encontrar + " obtuvo un descuento.");
 
