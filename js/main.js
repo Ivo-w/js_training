@@ -1,4 +1,4 @@
-
+/*
 class CrearUsuarios {
 	constructor (nombre, edad, dni) {
 		this.nombre = nombre;
@@ -32,5 +32,12 @@ console.log (usuario1.dni);
 	const encontrar = usuariosFinales.find (elemento => elemento = "Leonel");
 
 	console.log (usuariosFinales);
-	console.log (encontrar + " obtuvo un descuento.");
+	console.log (encontrar + " obtuvo un descuento.");*/
 
+
+function nombre() {
+  let mensaje = document.createElement ("main");
+  mensaje.innerHTML = "<div><p> Desafio DOM </p></div>";
+  document.body.appendChild(mensaje);
+}
+nombre();
