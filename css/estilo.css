@@ -66,3 +66,25 @@ p{
 	font-size: 50px;
 	color: yellow;
 }
+
+.botones{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.btnStyle{
+	font-size: 20px;
+	font-family: monospace;
+	padding: 5px;
+}
+.btnEstilo{
+	padding-top: 20px;
+	font-size: 40px;
+	font-family: monospace;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.colorUsuario{
+	color: green;
+}

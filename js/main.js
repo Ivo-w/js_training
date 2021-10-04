@@ -35,9 +35,24 @@ console.log (usuario1.dni);
 	console.log (encontrar + " obtuvo un descuento.");*/
 
 
-function nombre() {
+/*function nombre() {
   let mensaje = document.createElement ("main");
   mensaje.innerHTML = "<div><p> Desafio DOM </p></div>";
   document.body.appendChild(mensaje);
 }
-nombre();
+nombre();*/
+
+//let hola = prompt("Ingrese su nombre")
+
+
+let ingreso = prompt("Ingrese su nombre")
+let boton = document.getElementById('btn');
+	boton.addEventListener("click", respuesta);
+
+
+function respuesta() {
+	let mensaje = document.createElement ("div");
+	mensaje.innerHTML = `<h1 class='btnEstilo'>Bienvenido,<strong class='colorUsuario'>${ingreso}</strong>!!</h1>`
+	document.body.appendChild(mensaje);
+
+}
