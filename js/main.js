@@ -15,44 +15,28 @@ const usuario1 = new CrearUsuarios (
 console.log (usuario1);
 console.log (usuario1.nombre);
 console.log (usuario1.edad );
-console.log (usuario1.dni);
-
-
-// Desafio ARRAYS
-	const NUMEROS = [1, 2, 3, 4, 5, 6, 7];
-
-	let usuariosAprobados = ["Matías", "Marcelo", "Camila", "Leonel"];
-
-	let usuariosRegulares = ["Hernan", "Santiago", "Lucas", "Sofía"];
-
-	let usuariosFinales = usuariosAprobados.concat(usuariosRegulares);
-
-	usuariosFinales.push("Martín");
-
-	const encontrar = usuariosFinales.find (elemento => elemento = "Leonel");
-
-	console.log (usuariosFinales);
-	console.log (encontrar + " obtuvo un descuento.");*/
-
-
-/*function nombre() {
-  let mensaje = document.createElement ("main");
-  mensaje.innerHTML = "<div><p> Desafio DOM </p></div>";
-  document.body.appendChild(mensaje);
-}
-nombre();*/
-
-//let hola = prompt("Ingrese su nombre")
+console.log (usuario1.dni);*/
 
 
 let ingreso = prompt("Ingrese su nombre")
-let boton = document.getElementById('btn');
+let boton = document.getElementById('btn_js');
 	boton.addEventListener("click", respuesta);
 
 
 function respuesta() {
 	let mensaje = document.createElement ("div");
-	mensaje.innerHTML = `<h1 class='btnEstilo'>Bienvenido,<strong class='colorUsuario'>${ingreso}</strong>!!</h1>`
+	mensaje.innerHTML = `<h1 class='btnEstilo'>El apartado productos puede facilitar tu navegación, <strong class='colorUsuario'>${ingreso}</strong>!!</h1>`
 	document.body.appendChild(mensaje);
+}
 
+const productos = [{ id: 1,  producto: "Libro 1", precio: 110 },
+                  {  id: 2,  producto: "Libro 2", precio: 120 },
+                  {  id: 3,  producto: "Libro 3"  , precio: 130},
+                  {  id: 4,  producto: "Libro 4" , precio: 140}];
+
+const guardarLocal = (key, value) => { 
+	localStorage.setItem(clave, valor)};
+
+for (const producto of productos) {
+    guardarLocal(productos.id, JSON.stringify(productos));
 }
