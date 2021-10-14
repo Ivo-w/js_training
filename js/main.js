@@ -18,7 +18,7 @@ console.log (usuario1.edad );
 console.log (usuario1.dni);*/
 
 
-let ingreso = prompt("Ingrese su nombre")
+/*let ingreso = prompt("Ingrese su nombre")
 let boton = document.getElementById('btn_js');
 	boton.addEventListener("click", respuesta);
 
@@ -40,3 +40,26 @@ const guardarLocal = (key, value) => {
 for (const producto of productos) {
     guardarLocal(productos.id, JSON.stringify(productos));
 }
+*/
+
+/*$('body').append('<h2 id= "bnv" >Bienvenido</h2>');
+
+on('click', function () {
+    console.log("Respuesta a un click");
+});
+$('#bnv')
+
+$('#bnv').on('dblclick', () => {
+    console.log("Respuesta al doble click");*/
+
+/*$("body").prepend('<button class="btn1 ">Usuario</button>');*/
+$("body").prepend('<div class ="divBtn2"><button class="btnStyle" id="btn2">Más Información</button></div>');
+
+$("#btn1").click(function () { 
+    console.log(this);
+});
+
+$("#btn2").click((e) => { 
+    console.log(e.target);
+});
+
