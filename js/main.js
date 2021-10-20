@@ -53,7 +53,7 @@ $('#bnv').on('dblclick', () => {
     console.log("Respuesta al doble click");*/
 
 /*$("body").prepend('<button class="btn1 ">Usuario</button>');*/
-$("body").prepend('<div class ="divBtn2"><button class="btnStyle" id="btn2">Más Información</button></div>');
+/*$("body").prepend('<div class ="divBtn2"><button class="btnStyle" id="btn2">Más Información</button></div>');
 
 $("#btn1").click(function () { 
     console.log(this);
@@ -61,5 +61,25 @@ $("#btn1").click(function () {
 
 $("#btn2").click((e) => { 
     console.log(e.target);
+});*/
+
+const URLGET = "https://jsonplaceholder.typicode.com/posts"
+
+$("body").append('<button class="btnGet" id="btn1">TRAER</button>');
+
+$("#btn1").click(() => { 
+    $.get(URLGET, function (response, estado, state) {
+          if(state.status === 200){
+            let misDatos = response;
+            for (const dato of misDatos) {
+              $("body").append(`<div>
+                                   <h3>${dato.title}</h3>
+                                   <p> ${dato.body}</p>
+                                  </div>`);
+            }  
+          } else {
+          	$("body").append('<h3>Error de dato</h3>');
+          }
+    });
 });
 
