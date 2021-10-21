@@ -1,5 +1,5 @@
-/*
-class CrearUsuarios {
+
+/*class CrearUsuarios {
 	constructor (nombre, edad, dni) {
 		this.nombre = nombre;
 		this.edad = edad;
@@ -12,58 +12,10 @@ const usuario1 = new CrearUsuarios (
 	parseInt (prompt("Ingrese su número de DNI")),
 );
 
-console.log (usuario1);
-console.log (usuario1.nombre);
-console.log (usuario1.edad );
-console.log (usuario1.dni);*/
+console.log (usuario1);*/
 
 
-/*let ingreso = prompt("Ingrese su nombre")
-let boton = document.getElementById('btn_js');
-	boton.addEventListener("click", respuesta);
-
-
-function respuesta() {
-	let mensaje = document.createElement ("div");
-	mensaje.innerHTML = `<h1 class='btnEstilo'>El apartado productos puede facilitar tu navegación, <strong class='colorUsuario'>${ingreso}</strong>!!</h1>`
-	document.body.appendChild(mensaje);
-}
-
-const productos = [{ id: 1,  producto: "Libro 1", precio: 110 },
-                  {  id: 2,  producto: "Libro 2", precio: 120 },
-                  {  id: 3,  producto: "Libro 3"  , precio: 130},
-                  {  id: 4,  producto: "Libro 4" , precio: 140}];
-
-const guardarLocal = (key, value) => { 
-	localStorage.setItem(clave, valor)};
-
-for (const producto of productos) {
-    guardarLocal(productos.id, JSON.stringify(productos));
-}
-*/
-
-/*$('body').append('<h2 id= "bnv" >Bienvenido</h2>');
-
-on('click', function () {
-    console.log("Respuesta a un click");
-});
-$('#bnv')
-
-$('#bnv').on('dblclick', () => {
-    console.log("Respuesta al doble click");*/
-
-/*$("body").prepend('<button class="btn1 ">Usuario</button>');*/
-/*$("body").prepend('<div class ="divBtn2"><button class="btnStyle" id="btn2">Más Información</button></div>');
-
-$("#btn1").click(function () { 
-    console.log(this);
-});
-
-$("#btn2").click((e) => { 
-    console.log(e.target);
-});*/
-
-const URLGET = "https://jsonplaceholder.typicode.com/posts"
+/*const URLGET = "https://jsonplaceholder.typicode.com/posts"
 
 $("body").append('<button class="btnGet" id="btn1">TRAER</button>');
 
@@ -81,5 +33,34 @@ $("#btn1").click(() => {
           	$("body").append('<h3>Error de dato</h3>');
           }
     });
-});
+});*/
 
+const productosSeller = [{id: 1, nombre: 'A Promised Land. Barack Obama', precio: 2200, urlimg:"https://images-na.ssl-images-amazon.com/images/I/91K6nY47glL.jpg" },
+                         {id: 2, nombre: 'Too Much and Never Enough: How My Family', precio: 2000, urlimg: "https://images-na.ssl-images-amazon.com/images/I/8116vy-AXCL.jpg" },
+                         {id: 3, nombre: 'Where the Crawdads Sing. Delia Owens', precio: 1250, urlimg: "https://images-na.ssl-images-amazon.com/images/I/91JSPXvOobL.jpg"},
+                         {id: 4, nombre: 'La madre de Frankenstein', precio: 1100, urlimg: "https://contentv2.tap-commerce.com/cover/large/9789876706094_1.jpg?id_com=1113"},
+                        ];
+
+    /*listarProductos (padre, data, callback)*/
+    for (const producto of productosSeller) {
+
+        $('#producto_Book').append(`
+            <div class="productoBook">
+              <input value="${producto.id}" type="hidden" >
+              <img class="imgTamanio" src=${producto.urlimg}>
+              <h3 class="paddingProducto titleBook"> ${producto.nombre} </h3>
+              <div class="botonFlex">
+               <h3 class="paddingProducto priceBook"> $${producto.precio} </h3>
+               <div class ="flexBoton">
+               <button type="button" class="styleBoton paddingBTN"><ion-icon class="iconCarrito" name="cart-outline"></ion-icon>COMPRAR</button>
+                </div>
+              </div>
+            </div>
+            `);
+        };
+    //$('.titleBook').prepend(`<img src="./assets/img/portadaFinal.png">`);
+
+    /*{id: 5, nombre: 'Midnight Sun', precio: 250},
+                         {id: 6, nombre: 'Untamed', precio: 250},
+                         {id: 7, nombre: 'El fin y otros inicios', precio: 250},
+                         {id: 8, nombre: 'La madre de Frankenstein ', precio: 250}*/
