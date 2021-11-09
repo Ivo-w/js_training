@@ -170,8 +170,8 @@ font-size: 20px;
 	background-color: #c2c2c2;
 }
 .imgTamanio{
-	height: 300px;
-	width: 20%;
+	height: 150px;
+	width: 25%;
 	padding-left: 10px;
 	padding-top: 10px;
 }
@@ -180,11 +180,16 @@ font-size: 20px;
 	font-family: plat;
 }
 .iconCarrito{
-	font-size: 10px;
+	font-size: 15px;
 }
 .containerFooter{
 	padding-top: 20px;
 }
 .flexBoton{
 	padding-left: 100px;
+}
+.containerBook{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
