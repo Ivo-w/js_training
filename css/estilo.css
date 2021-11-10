@@ -193,3 +193,27 @@ font-size: 20px;
 	flex-direction: row;
 	justify-content: center;
 }
+.formTamanio{
+	width: 40%;
+	padding-left: 100px;
+	padding-top: 100px;
+}
+.fontStyle{
+	font-family: plat;
+	font-size: 20px;
+}
+.warning{
+	width: 200px;
+	text-align: center;
+	margin: auto;
+	color: green;
+	padding-top: 20px;
+}
+.btnGeneral{
+color: white;
+}
+.flexBtnLimpiar{
+ display: flex;
+ 
+
+}

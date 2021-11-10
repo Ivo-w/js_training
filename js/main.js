@@ -1,40 +1,19 @@
-/*const productosSeller = [{id: 1, nombre: 'A Promised Land. Barack Obama', precio: 2200, urlimg:"https://images-na.ssl-images-amazon.com/images/I/91K6nY47glL.jpg" },
-                         {id: 2, nombre: 'Too Much and Never Enough: How My Family', precio: 2000, urlimg: "https://images-na.ssl-images-amazon.com/images/I/8116vy-AXCL.jpg" },
-                         {id: 3, nombre: 'Where the Crawdads Sing. Delia Owens', precio: 1250, urlimg: "https://images-na.ssl-images-amazon.com/images/I/91JSPXvOobL.jpg"},
-                         {id: 4, nombre: 'La madre de Frankenstein', precio: 1100, urlimg: "https://contentv2.tap-commerce.com/cover/large/9789876706094_1.jpg?id_com=1113"},
-                        ];*/
-
-    /*listarProductos (padre, data, callback)*/
-    /*for (const producto of productosSeller) {
-
-        $('#producto_Book').append(`
-            <div class="productoBook">
-              <input value="${producto.id}" type="hidden" >
-              <img class="imgTamanio item-image" src=${producto.urlimg}>
-              <h3 class="paddingProducto titleBook item-title"> ${producto.nombre} </h3>
-              <div class="botonFlex">
-               <h3 class="paddingProducto priceBook item-price"> $${producto.precio} </h3>
-               <div class ="flexBoton">
-               <button type="button" class="styleBoton paddingBTN"><ion-icon class="iconCarrito" name="cart-outline"></ion-icon>COMPRAR</button>
-                </div> 
-              </div>
-            </div>
-            `);
-        };*/
-/*--------------------------------*/
+//
 const addToShoppingCartButtons = document.querySelectorAll('.addToCart');
 addToShoppingCartButtons.forEach((addToCartButton) => {
   addToCartButton.addEventListener('click', addToCartClicked);
 });
 
 const comprarButton = document.querySelector('.comprarButton');
-comprarButton.addEventListener('click', comprarButtonClicked);
+if (comprarButton){
+  comprarButton.addEventListener ('click', comprarButtonClicked);
+}
 
 const shoppingCartItemsContainer = document.querySelector(
   '.shoppingCartItemsContainer'
 );
 
-function addToCartClicked(event) {
+function addToCartClicked(e) {
   const button = event.target;
   const item = button.closest('.item');
 
@@ -57,7 +36,7 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
         '.shoppingCartItemQuantity'
       );
       elementQuantity.value++;
-      $('.toast').toast('show');
+        $('.toast').toast('show');
       updateShoppingCartTotal();
       return;
     }
@@ -140,3 +119,30 @@ function comprarButtonClicked() {
   shoppingCartItemsContainer.innerHTML = '';
   updateShoppingCartTotal();
 }
+
+/*PROXIMOS LIBROS - STOCK POR VENIR*/
+
+/*const productosSeller = [{id: 1, nombre: 'A Promised Land. Barack Obama', precio: 2200, urlimg:"https://images-na.ssl-images-amazon.com/images/I/91K6nY47glL.jpg" },
+                         {id: 2, nombre: 'Too Much and Never Enough: How My Family', precio: 2000, urlimg: "https://images-na.ssl-images-amazon.com/images/I/8116vy-AXCL.jpg" },
+                         {id: 3, nombre: 'Where the Crawdads Sing. Delia Owens', precio: 1250, urlimg: "https://images-na.ssl-images-amazon.com/images/I/91JSPXvOobL.jpg"},
+                         {id: 4, nombre: 'La madre de Frankenstein', precio: 1100, urlimg: "https://contentv2.tap-commerce.com/cover/large/9789876706094_1.jpg?id_com=1113"},
+                        ];*/
+
+    /*listarProductos (padre, data, callback)*/
+    /*for (const producto of productosSeller) {
+
+        $('#producto_Book').append(`
+            <div class="productoBook">
+              <input value="${producto.id}" type="hidden" >
+              <img class="imgTamanio item-image" src=${producto.urlimg}>
+              <h3 class="paddingProducto titleBook item-title"> ${producto.nombre} </h3>
+              <div class="botonFlex">
+               <h3 class="paddingProducto priceBook item-price"> $${producto.precio} </h3>
+               <div class ="flexBoton">
+               <button type="button" class="styleBoton paddingBTN"><ion-icon class="iconCarrito" name="cart-outline"></ion-icon>COMPRAR</button>
+                </div> 
+              </div>
+            </div>
+            `);
+        };*/
+
