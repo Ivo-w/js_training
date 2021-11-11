@@ -44,7 +44,6 @@ a{
 	padding: 20px;
 	list-style: none;
 	text-decoration: none;
-
 }
 .navTamanio{
 	font-size: 30px;
@@ -87,8 +86,6 @@ a{
 .mensaje{
  font-family: monospace;
 }
-
-
 .botones{
 	display: flex;
 	flex-direction: row;
@@ -216,8 +213,6 @@ color: white;
 }
 .flexBtnLimpiar{
  display: flex;
- 
-
 }
 .imageStyle{
 	height: 300px;
