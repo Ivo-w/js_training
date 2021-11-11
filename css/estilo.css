@@ -142,6 +142,8 @@ font-size: 20px;
 	padding-top: 40px;
 }
 .productoBook{
+	padding-left: 150px;
+	padding-top: 50px;
 }
 .priceBook{
 	padding-left: 5px;
@@ -216,4 +218,11 @@ color: white;
  display: flex;
  
 
+}
+.imageStyle{
+	height: 300px;
+	width: 15%;
+}
+.titleStyleStock{
+	padding-left: 150px;
 }
